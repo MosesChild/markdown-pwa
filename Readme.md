@@ -17,18 +17,8 @@ I also started this project to practice:
 Possible further steps
 - [ ] add more markdown(like checkboxes)
 
-## markdown-PWA build log
-## 6/25/2018
-### Bootstrapped react app with create-react-app 
-```bash
-VS-Code Projects$ npx create-react-app my-app
-```
-### Changed name of folder to markup-PWA
 
-### Copied files from [my codepen](https://codepen.io/moseschild/pen/rGKgZG)
-* copied javascript as markUp.js
-* Altered src/index.js to point to my markUpEditor
-* copied sass as index.sass
+## markdown-PWA build log
 
 ## 6/26/2018
 
@@ -60,4 +50,27 @@ VS-Code Projects$ npx create-react-app my-app
   * Direct all input through DOMPurify and marked before being stored or viewed.
 * **MarkupViewer** component in module markupViewer.js
   * Isolated this component as its own module and it should work on its own to display markup.
+
+### **Git**
+* Made first commit.
+* Setup remote origin at github
+* Pushed to remote Origin
+* Tested and noticed problem when creating input.
+
+### Fixed bug!
+* No html tags can be injected (only markup works to stylize content) as all input is filtered by DOMPurify set to not allow any tags!  Kerrits "<>" show up in MarkupViewer but are changed to '\&lt;' in the textarea (and in the MarkupEditor component) preventing them from doing harm.
+* Commit to git.
+
+## 6/25/2018
+### Bootstrapped react app with create-react-app 
+```bash
+VS-Code Projects$ npx create-react-app my-app
+```
+### Changed name of folder to markup-PWA
+
+### Copied files from [my codepen](https://codepen.io/moseschild/pen/rGKgZG)
+* copied javascript as markUp.js
+* Altered src/index.js to point to my markUpEditor
+* copied sass as index.sass
+
 

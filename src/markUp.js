@@ -1,5 +1,4 @@
 import React from 'react';
-import marked from 'marked';
 import DOMPurify from 'dompurify';
 import {text, MarkupKey} from './markupKey';
 import {MarkupViewer} from './markupViewer';
@@ -19,8 +18,7 @@ class MarkUpEditor extends React.Component {
          this.setState({value: "", userclicked: "true"})
       } else {
         // should clean on input!
-      const cleanedMarkupForDOM=DOMPurify.sanitize( marked( event.target.value ) );
-      this.setState({value: cleanedMarkupForDOM})
+      this.setState({value: DOMPurify.sanitize(event.target.value, {ALLOWED_TAGS:[]})})
       }
    }
  
