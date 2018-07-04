@@ -1,8 +1,8 @@
 import React from "react";
 import DOMPurify from "dompurify";
-import { text, UserKey } from "./markupKey";
+import { text, userKey } from "./markupKey";
 import { MarkupViewer } from "./markupViewer";
-import Hideable from "./hideable";
+import { Collapse } from "./collapse";
 
 class MarkUpEditor extends React.Component {
   // React Class Component represents entire Mark up editor and viewer.
@@ -40,14 +40,11 @@ class MarkUpEditor extends React.Component {
         />
         <div className="viewArea">
           <MarkupViewer value={this.state.value} />
-          <button onClick={this.props.keyButton}>ShowKEY</button>
-          <Hideable showKey={this.props.showKey}>
-            <UserKey />
-          </Hideable>
+          <Collapse trigger={"showKey"}>{userKey}</Collapse>
         </div>
       </div>
     );
   }
 }
-
+/* <MarkupKey /> */
 export default MarkUpEditor;

@@ -1,7 +1,6 @@
-import React from 'react';
-import Collapsible from 'react-collapsible';
+import React from "react";
 
-const text=`Heading 
+const text = `Heading 
 =======
 
 Sub-heading
@@ -34,16 +33,11 @@ Spain.
 
 *[Herman Fassett](https://freecodecamp.com/hermanfassett)*`;
 
-var array=text.split('\n');
-var userMarkupKey = array.reduce(function(accumulator, currentValue) {
-   return accumulator + currentValue+ "<br>"
-},"");
+var array = text.split("\n");
+var key = array.reduce(function(accumulator, currentValue) {
+  return accumulator + currentValue + "<br>";
+}, "");
 
-function MarkupKey(){
-    // React Element to present (Collapsible) helpful MarkupKeyText.
-       return (
-       <Collapsible trigger="Show/Hide Key">
-       <div dangerouslySetInnerHTML={{__html: userMarkupKey}} />
-     </Collapsible>);
-}
-export {MarkupKey, text};
+const UserKey = () => <div dangerouslySetInnerHTML={{ __html: key }} />;
+
+export { text, UserKey };

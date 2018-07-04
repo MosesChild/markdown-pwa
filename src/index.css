@@ -1,57 +1,51 @@
 body {
   margin: 0 0;
-  padding: 0;
+  padding: 0 0;
   font-size: 16px;
-  height: 100vh;
-  width: 100vw; }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
 
 .editor {
+  position: relative;
   display: flex;
   flex-flow: column wrap;
   margin: 0 0;
-  padding: 0;
-  width: 100%; }
-  @media (min-width: 725px) {
-    .editor {
-      flex-flow: row wrap; } }
+  padding: 72px 0;
+  width: 100%;
+}
+
+@media (min-width: 725px) {
+  .editor {
+    flex-flow: row wrap;
+  }
+}
 
 .textInput {
   margin: 0 0;
-  padding: 2%;
+  padding: 0 2%;
   flex: 1 0 350px;
   color: white;
   background-color: black;
   height: 42vh;
-  order: 1; }
-  @media (min-width: 725px) {
-    .textInput {
-      height: 92vh;
-      order: 0; } }
+  order: 1;
+}
+
+@media (min-width: 725px) {
+  .textInput {
+    height: 88vh;
+    order: 0;
+  }
+}
 
 .viewArea {
   flex: 1 0 375px;
-  position: relative; }
+  margin: 0px 0px;
+  position: relative;
+}
 
 .viewer {
-  padding-top: 32px;
-  padding-left: 20px;
+  padding: 0px 20px;
   color: black;
-  background-color: white; }
-
-.Collapsible {
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  background-color: blue; }
-
-.Collapsible__trigger {
-  color: white;
-  line-height: 2;
-  text-align: center;
-  display: block; }
-
-.Collapsible__contentOuter {
-  background-color: white; }
-
-.Collapsible__contentInner {
-  padding: 10px; }
+  background-color: white;
+  position: relative;
+}

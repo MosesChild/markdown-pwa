@@ -1,0 +1,13 @@
+header {
+display: flex;
+color: white;
+background-color: blue;
+align-content: center;
+}
+h1 {
+    flex: 1 0 50%;
+}
+button {
+    flex: 1 0 50%;
+    align-self:flex-end
+}

@@ -19,6 +19,32 @@ Possible further steps
 
 
 ## markdown-PWA build log
+## 7/3/2018
+Prepared to replace "collapsible" functionality:
+* Compartmentalized "collapse" into its own module ("collapse.js")
+* saved version of markUp.js -> markUp-collapse.js for easy restore if necessary.
+
+## 6/27/2018
+
+### Investigated some react components for header. 
+
+  * Wasn't crazy about react-bootstrap (It requires too much difference from normal react-flow as it prefers working with props.children over props.)
+  * React-sticky seemed like it wasn't great either as for the most part 'sticky' css should work.  Maybe later when I support browsers that don't have this property.
+
+### Uninstalled SASS pre-processing!
+
+I didn't like the vulnerability warnings from the dependencies.
+Instead I am using the css file that it had generated.  On reading the create-react-app readme, I saw how it recommended working with webpack.
+### Installed prettier using this [article](https://medium.com/technical-credit/using-prettier-with-vs-code-and-create-react-app-67c2449b9d08)
+```bash
+ yarn add --dev --exact prettier
+ yarn add --dev eslint-plugin-prettier
+```
+
+### Installed Material-UI [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) React ready material-ui icons.
+
+
+
 
 ## 6/26/2018
 

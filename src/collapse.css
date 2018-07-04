@@ -1,0 +1,18 @@
+.Collapsible {
+    position: absolute;
+    width: 100%;
+    top: -32px;
+   }
+  
+  .Collapsible__trigger {
+    color: white;
+    line-height: 2;
+    text-align: center;
+    display: block; }
+  
+  .Collapsible__contentOuter {
+    background-color: white; }
+  
+  .Collapsible__contentInner {
+    padding: 10px; }
+  
