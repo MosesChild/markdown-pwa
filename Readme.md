@@ -19,6 +19,26 @@ Possible further steps
 
 
 ## markdown-PWA build log
+## 7/6/2018
+  created 'src/redux/' folder and 'reducers.js' to house new redux functionality.  
+  **BIG MISTAKE** added jest -'yarn add --dev jest'
+  Had to [follow FaabLondon instructions](https://github.com/facebook/jest/issues/6393)  
+
+Deleted node_modules, yarn-lock and package.lock! Then...
+
+```bash
+npm install
+yarn install
+```
+
+Got basic tests running from create-React-App-README.md instructions.
+Created:
+* sum.js
+* sum.test.js
+* tests.test.js
+
+
+
 ## 7/3/2018
 Prepared to replace "collapsible" functionality:
 * Compartmentalized "collapse" into its own module ("collapse.js")

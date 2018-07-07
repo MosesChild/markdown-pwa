@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   margin: 0 0;
-  padding: 72px 0;
+  padding: 0 0;
   width: 100%;
 }
 
