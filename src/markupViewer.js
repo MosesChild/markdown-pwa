@@ -5,7 +5,7 @@ function MarkupViewer(props) {
   // React Element for presenting user text as markup.
   return (
     <div
-      className="viewer"
+      className="viewer" filename={props.filename}
       dangerouslySetInnerHTML={{ __html: marked(props.value) }}
     />
   );
