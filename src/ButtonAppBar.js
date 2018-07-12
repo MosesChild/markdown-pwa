@@ -32,9 +32,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = { toggleKey, saveFile, openFile };
 
 function ButtonAppBar(props) {
-  const { classes, keyButton } = props;
+  const { classes } = props;
   console.log("props", props);
-  let fileInput;
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -55,7 +54,7 @@ function ButtonAppBar(props) {
             Save
           </Button>
           <Button color="inherit" onClick={props.toggleKey}>
-            {props.showKey == true ? "Hide key" : "Show Key"}
+            {props.showKey === true ? "Hide key" : "Show Key"}
           </Button>
         </Toolbar>
       </AppBar>

@@ -1,31 +1,52 @@
 # markdown-pwa Readme
 
-markdown-pwa is meant to be a simple progressive web app for writing and reading markdown.
+## Why I created this app.
+markdown-pwa is a simple progressive web app for writing and reading markdown.
 
 I also started this project to practice:
 
 - making a progressive web application.
-- using react with my current skillsets to update one of my first projects.
+- adding redux to update one of my first react projects.
 - scaffolding a react-app in vs-code
 - transporting my codepen code to a realistic editing environment (vs-code).
 
-## Next steps
+## To Build from source...
+This app was bootstrapped with create-react-app...  I use yarn...  
+- Start by installing create-react-app...
+- Then clone everything in the ./src/ folder (including sub-folders if any.)
+- Make sure that you also clone the public/images folder and the public/manifest.json file for offline use. 
 
-- [ ] Turn into a progressive app!
-- [ ] Get to update redux store only on focus change or save.
+## App Requirements (functionality todo list)
+
+- [x] Add file upload/download functionality.
+- [x] Have viewer track input position...
 - [x] Create a header bar.
-- [ ] Stylize for both mobile and desktop
-- [x] Add file upload/download functionality
+- [x] Stylize for both mobile and desktop
+- [x] Turn into a progressive app!
 
 Possible further steps
 
+- [ ] add install app function to menu icon (menu).
+- [ ] add info to menu icon.
 - [ ] add more markdown(like checkboxes)
 
 ## markdown-PWA build log
 
+## 7/12/2018
+
+### PWA functionality is now implemented.
+
+- Made a production build (yarn build);
+- Created (crappy) icon set for manifest file to point to. (public/Images/)
+- Edited public/manifest.json to apps particulars and icon set...
+
+## 7/11/2018
+
+Viewer now tracks input textarea position.
+
 ## 7/10/2018
 
-Got Load/Save functionality working in redux store and on AppBar...
+Load/Save functionality works in redux store and on AppBar...
 yarn add file-saver
 yarn add react-simple-file-input
 

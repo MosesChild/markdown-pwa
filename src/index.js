@@ -6,7 +6,8 @@ import App from "./redux/App";
 import { reducers } from "./redux/reducers";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-//import registerServiceWorker from "./registerServiceWorker";
+import registerServiceWorker from "./registerServiceWorker";
+let installPromptEvent;
 
 ReactDOM.render(
   <Provider store={createStore(reducers)}>
@@ -14,4 +15,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-//registerServiceWorker();
+registerServiceWorker();
